@@ -1,6 +1,6 @@
 # Pytorch simple classification baselines
 
-This repository is the pytorch implementation of [channel pruning](https://arxiv.org/abs/1707.06168) and [AMC](https://arxiv.org/pdf/1802.03494.pdf), the code is inspired by the tensorflow implementation.      
+This repository is the pytorch implementation of [channel pruning](https://arxiv.org/abs/1707.06168) and [AMC](https://arxiv.org/pdf/1802.03494.pdf), the code is inspired by the [tensorflow implementation](https://pocketflow.github.io/).      
 
  
 ## Requirements:
