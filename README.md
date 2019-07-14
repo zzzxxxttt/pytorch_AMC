@@ -14,10 +14,10 @@ This repository is the pytorch implementation of [channel pruning](https://arxiv
 ### Train a baseline network
 * ```python3 cifar_train_eval.py```
 
-### Searching pruning ratio for each layer using AMC 
+### Searching pruning ratio using AMC 
 * ```python3 cifar_search.py```
 
-### Prune and finetune using searched pruning ratio 
+### Prune and finetune 
 * ```python3 cifar_finetune.py```
 
 ## Plain-20 50%FLOPs on CIFAR-10:
