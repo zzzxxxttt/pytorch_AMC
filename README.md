@@ -23,12 +23,12 @@ This repository is the pytorch implementation of [channel pruning](https://arxiv
 ## Plain-20 50%FLOPs on CIFAR-10:
 
 ### Reward curve
-<img src="https://github.com/zzzxxxttt/pytorch_AMC/blob/master/figs/plain20_search.png" width="500" />
+<img src="https://github.com/zzzxxxttt/pytorch_AMC/blob/master/figs/plain20_agent_outputs.png" width="500" />
 
 ### Agent outputs
-<img src="https://github.com/zzzxxxttt/pytorch_AMC/blob/master/figs/plain20_agent_outputs.png" width="500" />
+<img src="https://github.com/zzzxxxttt/pytorch_AMC/blob/master/figs/plain20_search.png" width="500" />
 
 ### Compression results
 Model|Acc.|Acc. after pruning|Acc. after finetune|
-:---:|:---:|:---:|:---:|:---:|
+:---:|:---:|:---:|:---:|
 Plain-20|91.22%|80.01%|89.86%|
