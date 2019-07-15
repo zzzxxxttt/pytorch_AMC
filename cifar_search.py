@@ -1,4 +1,5 @@
 import os
+import time
 
 # 3~5 is enough, otherwise sklearn will try to use all the CPUs
 os.environ["OPENBLAS_NUM_THREADS"] = '3'
@@ -7,6 +8,10 @@ os.environ["MKL_NUM_THREADS"] = '3'
 import pickle
 import argparse
 from datetime import datetime
+
+import numpy as np
+
+import torch
 
 from nets.cifar_vgg import vgg16
 from nets.cifar_plain import plain20
@@ -24,7 +29,7 @@ parser = argparse.ArgumentParser(description='pytorch_AMC')
 parser.add_argument('--log_name', type=str, default='RL_plain20_flops0.5')
 
 parser.add_argument('--model', type=str, default='plain20')
-parser.add_argument('--pretrain_dir', type=str, default='./ckpt/plain20_baseline.t7')
+parser.add_argument('--pretrain_name', type=str, default='plain20_baseline')
 
 parser.add_argument('--method', type=str, default='channel_pruning')
 parser.add_argument('--num_sample_points', type=int, default=10)
@@ -37,6 +42,8 @@ parser.add_argument('--min_buffer_size', type=int, default=1000)
 parser.add_argument('--max_steps', type=int, default=500)
 
 cfg = parser.parse_args()
+
+cfg.pretrain_dir = os.path.join(cfg.root_dir, 'ckpt', cfg.pretrain_name + '.t7')
 
 
 # os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"  # see issue #152
