@@ -1,6 +1,6 @@
 # Pytorch AMC
 
-This repository is the pytorch implementation of [channel pruning](https://arxiv.org/abs/1707.06168) and [AMC](https://arxiv.org/pdf/1802.03494.pdf), the code is inspired by the [tensorflow implementation](https://pocketflow.github.io/).      
+This repository is the pytorch implementation of [*Channel Pruning for Accelerating Very Deep Neural Networks*](https://arxiv.org/abs/1707.06168) and [*AMC: AutoML for Model Compression and Acceleration on Mobile Devices*](https://arxiv.org/abs/1802.03494), the code is inspired by the [tensorflow implementation](https://pocketflow.github.io/).      
 
  
 ## Requirements:
